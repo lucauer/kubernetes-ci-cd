@@ -86,6 +86,8 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
  name: puzzle
+ annotations: 
+  nginx.ingress.kubernetes.io/enable-cors: "true"
 spec:
   backend:
     serviceName: puzzle
